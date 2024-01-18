@@ -1,8 +1,9 @@
 :root {
-    --cor-primaria: #213555;
-    --cor-secundaria: #ffecd3;
-    --cor-terciaria: #4F709C;
-    --cor-quaternaria: #e28436;
+    --cor-primaria: #070831;
+    --cor-secundaria: #fff4d5;
+    --cor-terciaria: #7b8b9c;
+    --cor-quaternaria: #db7a2a;
+    --cor-rodape: #2f552f;
 }
 
 html {
@@ -13,35 +14,114 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#header {
+.logo {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .6em;
+    font-family: "Sonsie One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5em;
+    color: var(--cor-quaternaria);
+    letter-spacing: -.1em;
+}
+
+#nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 40%;
-    right: 40px;
+    position: fixed;
+    top: 30%;
+    right: 0;
     width: 10%;
-    min-height: 70px;
-    padding: 1em;
-    background-color: var(--cor-primaria);
-    border: 1px solid var(--cor-quaternaria);
-    color: var(--cor-secundaria);
-    gap: 2em;
+    gap: 1.5em;
 }
 
-#header a {
+#nav a {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-size: 2em;
+}
+
+#icone__home {
+    background-image: url(assets/icones/botao-home.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#icone__home:hover,
+#icone__home.active {
+    background-image: url(assets/icones/botao-home-hover.png);
+    transform: scale(1.15);
+}
+
+#icone__sobre-mim {
+    background-image: url(assets/icones/botao-sobre-mim.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#icone__sobre-mim:hover,
+#icone__sobre-mim.active {
+    background-image: url(assets/icones/botao-sobre-mim-hover.png);
+    transform: scale(1.1);
+}
+
+#icone__habilidades {
+    background-image: url(assets/icones/botao-habilidades.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#icone__habilidades:hover,
+#icone__habilidades.active {
+    background-image: url(assets/icones/botao-habilidades-hover.png);
+    transform: scale(1.1);
+}
+
+#icone__projetos {
+    background-image: url(assets/icones/botao-projetos.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#icone__projetos:hover,
+#icone__projetos.active {
+    background-image: url(assets/icones/botao-projetos-hover.png);
+    transform: scale(1.15);
+}
+
+#icone__rodape {
+    background-image: url(assets/icones/botao-rodape.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease-in-out; 
+}
+
+#icone__rodape:hover,
+#icone__rodape.active {
+    background-image: url(assets/icones/botao-rodape-hover.png);
+    transform: scale(1.1);
 }
 
 .container-secoes {
@@ -113,12 +193,17 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 0;
 }
 
 .container-imagem__imagem {
-    height: 100%;
-    width: 100%;
+    height: 600px;
+    width: 600px;
     object-fit: cover;
+    object-position: -20px -100px;
+    transform: scaleX(-1);
+    filter: sepia(100%);
 }
 
 .secoes-secundarias {
@@ -128,11 +213,20 @@ section {
     gap: 2rem;
     width: 100%;
     height: 100vh;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
 }
 
 .secoes-secundarias__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    height: 80%;
+
+}
+
+.secao__sobre-mim__container {
     width: 80%;
     display: flex;
     align-items: center;
@@ -145,24 +239,26 @@ section {
     font-weight: 700;
 }
 
-.titulo-secao-2 {
-    color: var(--cor-primaria);
-}
 
 .secoes-secundarias__paragrafo {
     font-size: 1.8em;
     line-height: 1.8em;
     font-weight: 400;
-    color: var(--cor-primaria);
     margin-top: 2em;
 }
 
-.container__particao-1 {
+.secao__sobre-mim__container__particao-1 {
     margin-top: -25em;
+    width: 50%;
 }
 
-.container__particao-2 {
+.secao__sobre-mim__container__particao-2 {
     margin-top: 25em;
+    width: 50%;
+}
+
+#habilidades {
+    background-color: var(--cor-primaria);
 }
 
 .section-projetos {
@@ -174,8 +270,6 @@ section {
     gap: 2rem;
     height: 100vh;
     width: 100%;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
 }
 
 .container-projetos {
@@ -190,4 +284,13 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2em;
+}
+
+.secao__rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101vh;
+    width: 100%;
+    background-color: var(--cor-rodape);
 }

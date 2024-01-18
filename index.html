@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Lemos</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <header id="header">
-            <a href="#home">Home</a>
-            <a href="#sobre-mim">Sobre Mim</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-        </header>
+        <nav id="nav">
+            <a href="#home" id="icone__home"></a>
+            <a href="#sobre-mim" id="icone__sobre-mim"></a>
+            <a href="#habilidades" id="icone__habilidades"></a>
+            <a href="#projetos" id="icone__projetos"></a>
+            <a href="#rodape" id="icone__rodape"></a>
+        </nav>
         <div class="container-secoes">
             <div class="container-secoes__wrapper">
                 <section class="secao-principal" id="home">
+                    <a href="#home" class="logo">GCL</a>
                     <div class="secao-principal__container-texto">
                         <h1 class="secao-principal__titulo">Desenvolvedor <br> Front End.</h1>
                         <p class="secao-principal__paragrafo">Buscando aprimoramento contínuo.</p>
                     </div>
                     <div class="secao-principal__container-imagem">
-                        <img class="container-imagem__imagem" src="assets/foto portifolio.png" alt="Gabriel Lemos">
+                        <img class="container-imagem__imagem" src="assets/foto portifolio.jpeg" alt="Gabriel Lemos">
                     </div>
                 </section>
 
                 <section class="secoes-secundarias" id="sobre-mim">
-                    <div class="secoes-secundarias__container">
-                        <div class="container__particao-1">
+                    <div class="secao__sobre-mim__container">
+                        <div class="secao__sobre-mim__container__particao-1">
                             <h2 class="secoes-secundarias__titulo titulo-secao-2" >Sobre Mim</h2>
                             <p class="secoes-secundarias__paragrafo">Olá, me chamo Gabriel Lemos, tenho 19 anos e moro em São Paulo. Atualmente estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas na FATEC São Paulo. Sou desenvolvedor front end, com conhecimentos em HTML, CSS, JavaScript, ReactJS e React Native. Também tenho conhecimentos em PHP, MySQL e Java.</p>
                         </div>
-                        <div class="container__particao-2">
+                        <div class="secao__sobre-mim__container__particao-2">
                             <h2 class="secoes-secundarias__titulo">Sobre Mim</h2>
                             <p class="secoes-secundarias__paragrafo"></p>
                         </div>
@@ -94,10 +100,15 @@
                     <p class="paragrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt laudantium quaerat ratione porro delectus voluptate et sint, animi itaque assumenda iste debitis sed quisquam voluptas. Inventore, iste maiores. Consectetur.</p>
                 </section>
 
+                <footer class="secao__rodape">
+                    <section id="rodape">
+            
+                    </section>
+                </footer>
+
             </div>
         </div>
     </main>
-    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
