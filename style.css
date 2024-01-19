@@ -63,7 +63,8 @@ body {
 }
 
 #icone__home:hover,
-#icone__home.active {
+#icone__home.active,
+#icone__home:focus {
     background-image: url(assets/icones/botao-home-hover.png);
     transform: scale(1.15);
 }
@@ -77,7 +78,8 @@ body {
 }
 
 #icone__sobre-mim:hover,
-#icone__sobre-mim.active {
+#icone__sobre-mim.active,
+#icone__sobre-mim:focus {
     background-image: url(assets/icones/botao-sobre-mim-hover.png);
     transform: scale(1.1);
 }
@@ -91,7 +93,8 @@ body {
 }
 
 #icone__habilidades:hover,
-#icone__habilidades.active {
+#icone__habilidades.active,
+#icone__habilidades:focus {
     background-image: url(assets/icones/botao-habilidades-hover.png);
     transform: scale(1.1);
 }
@@ -105,7 +108,8 @@ body {
 }
 
 #icone__projetos:hover,
-#icone__projetos.active {
+#icone__projetos.active,
+#icone__projetos:focus {
     background-image: url(assets/icones/botao-projetos-hover.png);
     transform: scale(1.15);
 }
@@ -119,7 +123,8 @@ body {
 }
 
 #icone__rodape:hover,
-#icone__rodape.active {
+#icone__rodape.active,
+#icone__rodape:focus {
     background-image: url(assets/icones/botao-rodape-hover.png);
     transform: scale(1.1);
 }
